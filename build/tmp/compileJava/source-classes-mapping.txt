@@ -1,0 +1,6 @@
+com/wei/Student.java
+ com.wei.Student
+com/wei/Product.java
+ com.wei.Product
+com/wei/Tester.java
+ com.wei.Tester
