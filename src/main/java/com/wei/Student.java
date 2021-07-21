@@ -5,5 +5,5 @@ public class Student {
     String name;
     int english;
     int math;
-    int pass = 60;git
+    int pass = 60;
 }
