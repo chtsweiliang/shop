@@ -2,12 +2,20 @@ package com.wei;
 
 public class Product {
     // 屬性 Field , Property
-    int id; // 成員, Member
+    int id; // 成員, Member , Instance
     String name; // 成員, Member
     int price = 1; // 成員, Member
+    Category category;
 
-    public Product() {
+    // Constructor
+    public Product(int id, String 牙刷, Category category) { // default constructor
         super();
+    }
+
+    public Product(String name, Category category) {
+        this.id = 0;
+        this.name = name;
+        this.category = category;
     }
 
     // Constructor
@@ -22,7 +30,7 @@ public class Product {
     }
 
     // 方法 method
-    void publish() { // 成員, Member
+    void publish() { // 成員, Member , 可加入修飾字 Modifier
 
     }
 
