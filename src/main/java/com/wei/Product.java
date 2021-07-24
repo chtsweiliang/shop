@@ -2,13 +2,13 @@ package com.wei;
 
 public class Product {
     // 屬性 Field , Property
-    int id; // 成員, Member , Instance
+    protected int id; // 成員, Member , Instance
     String name; // 成員, Member
     int price = 1; // 成員, Member
     Category category;
 
     // Constructor
-    public Product(int id, String 牙刷, Category category) { // default constructor
+    public Product() { // default constructor
         super();
     }
 
