@@ -20,7 +20,7 @@ public class OrderItem extends Product {
         this.id = product.id;
         this.name = product.name;
         this.price = product.price;
-        this.category = product.category;
+        this.qty = 1;
     }
 
 
