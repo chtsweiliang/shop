@@ -2,21 +2,18 @@ package com.wei.thread;
 
 public class Tester {
     public static void main(String[] args) {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 20; i++) {
-                    System.out.println(" Running..." + i);
-                    try {
-                        Thread.sleep(300);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+        //Lambda (介面才有)
+        new Thread(() -> System.out.println("Run!")).start();
+        new Thread(() -> {
+            for (int i = 0; i < 20; i++) {
+                System.out.println(" Running..." + i);
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
-        };
-        Thread thr = new Thread(runnable);
-        thr.start();
+        }).start();
         //
         Thread thread = new Thread() {
             @Override
