@@ -4,7 +4,7 @@ package com.wei.box;
 //...
 //length,width,height -> OK?
 
-public class Box {
+public class Box implements Comparable<Box>{
     int length;
     int width;
     int height;
@@ -20,5 +20,10 @@ public class Box {
         //TODO: bug free
         // List sorting
         return length <= this.length && width <= this.width && height <= this.height;
+    }
+
+    @Override
+    public int compareTo(Box box) {
+        return (length+width+height)- (box.length+ box.height+ box.height);
     }
 }
